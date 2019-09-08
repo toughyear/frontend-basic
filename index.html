@@ -14,7 +14,7 @@
             <img src="images/logo.svg" alt="BIG inc." class="logo">
 
         <nav>
-                <a href="test.html" class="hide-desktop">
+                <a href="#" class="hide-desktop">
                     <img src="./images/ham.svg" alt="toggle menu" class= "menu" id= "menu">
                 </a> 
 
@@ -105,6 +105,20 @@
     var menu = document.getElementById('menu');
     var nav = document.getElementById('nav');
     var exit = document.getElementById('exit');
+    
+    menu.addEventListener('click',function(e){
+        nav.classList.toggle('hide-mobile');
+        e.preventDefault();
+    });
+
+    exit.addEventListener('click', function(e){
+        nav.classList.add('hide-mobile');
+        e.preventDefault();
+    });
+
+
+
+
     </script>
 </body>
 </html>
